@@ -1,0 +1,229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22512441195FBE580091F5E8 /* libbsm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36292C0E934AA40054F1A3 /* libbsm.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		72AFE8090EFAF3D9004BDA46 /* libauditd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7215DE4B0EFAF2EC00ABD81E /* libauditd.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		FC3628080E9345E10054F1A3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3628070E9345E10054F1A3 /* CoreFoundation.framework */; };
+		FC59A0AF0E8C8A0E00D41150 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = FC59A0AE0E8C8A0E00D41150 /* service.c */; settings = {COMPILER_FLAGS = "-I\"$SDKROOT\"/System/Library/Frameworks/System.framework/PrivateHeaders"; }; };
+		FCC841CC0EA7138700C01666 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36283E0E93463C0054F1A3 /* IOKit.framework */; };
+		FCD713740E95DE49001B0111 /* libedit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD713730E95DE49001B0111 /* libedit.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2233E845195FA5DF00BF8CB3 /* service.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = service.1; sourceTree = "<group>"; };
+		226B866C195FB05E00D59C1D /* _simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
+		226B8670195FB05E00D59C1D /* CrashReporterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
+		226B8671195FB05E00D59C1D /* ils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ils.h; sourceTree = "<group>"; };
+		226B8672195FB05E00D59C1D /* launch_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = launch_internal.h; sourceTree = "<group>"; };
+		226B8673195FB05E00D59C1D /* launch_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = launch_priv.h; sourceTree = "<group>"; };
+		226B8674195FB05E00D59C1D /* libinfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libinfo.h; sourceTree = "<group>"; };
+		226B8676195FB05E00D59C1D /* assumes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = assumes.h; sourceTree = "<group>"; };
+		226B8677195FB05E00D59C1D /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		226B867A195FB05E00D59C1D /* vproc_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vproc_internal.h; sourceTree = "<group>"; };
+		226B867B195FB05E00D59C1D /* vproc_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vproc_priv.h; sourceTree = "<group>"; };
+		226B8683195FB9E700D59C1D /* auditd_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = auditd_lib.h; path = bsm/auditd_lib.h; sourceTree = "<group>"; };
+		226B8685195FBAA800D59C1D /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		226B8686195FBB3200D59C1D /* bootstrap_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bootstrap_priv.h; sourceTree = "<group>"; };
+		226B8687195FBB6000D59C1D /* si_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = si_data.h; sourceTree = "<group>"; };
+		226B8688195FBB6000D59C1D /* si_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = si_module.h; sourceTree = "<group>"; };
+		7215DE4B0EFAF2EC00ABD81E /* libauditd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauditd.dylib; path = /usr/lib/libauditd.dylib; sourceTree = "<absolute>"; };
+		FC3628070E9345E10054F1A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		FC36283E0E93463C0054F1A3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		FC36292C0E934AA40054F1A3 /* libbsm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbsm.dylib; path = /usr/lib/libbsm.dylib; sourceTree = "<absolute>"; };
+		FC59A06D0E8C888A00D41150 /* service */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = service; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC59A0AE0E8C8A0E00D41150 /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = SOURCE_ROOT; };
+		FCD713730E95DE49001B0111 /* libedit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libedit.dylib; path = /usr/lib/libedit.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC59A06B0E8C888A00D41150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3628080E9345E10054F1A3 /* CoreFoundation.framework in Frameworks */,
+				FCC841CC0EA7138700C01666 /* IOKit.framework in Frameworks */,
+				72AFE8090EFAF3D9004BDA46 /* libauditd.dylib in Frameworks */,
+				22512441195FBE580091F5E8 /* libbsm.dylib in Frameworks */,
+				FCD713740E95DE49001B0111 /* libedit.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226B866B195FB05E00D59C1D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				226B866C195FB05E00D59C1D /* _simple.h */,
+				226B8686195FBB3200D59C1D /* bootstrap_priv.h */,
+				226B8684195FB9F400D59C1D /* bsm */,
+				226B8685195FBAA800D59C1D /* config.h */,
+				226B8670195FB05E00D59C1D /* CrashReporterClient.h */,
+				226B8671195FB05E00D59C1D /* ils.h */,
+				226B8672195FB05E00D59C1D /* launch_internal.h */,
+				226B8673195FB05E00D59C1D /* launch_priv.h */,
+				226B8674195FB05E00D59C1D /* libinfo.h */,
+				226B8675195FB05E00D59C1D /* os */,
+				226B8687195FBB6000D59C1D /* si_data.h */,
+				226B8688195FBB6000D59C1D /* si_module.h */,
+				226B867A195FB05E00D59C1D /* vproc_internal.h */,
+				226B867B195FB05E00D59C1D /* vproc_priv.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		226B8675195FB05E00D59C1D /* os */ = {
+			isa = PBXGroup;
+			children = (
+				226B8676195FB05E00D59C1D /* assumes.h */,
+				226B8677195FB05E00D59C1D /* base.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		226B8684195FB9F400D59C1D /* bsm */ = {
+			isa = PBXGroup;
+			children = (
+				226B8683195FB9E700D59C1D /* auditd_lib.h */,
+			);
+			name = bsm;
+			sourceTree = "<group>";
+		};
+		FC36280C0E9345F60054F1A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3628070E9345E10054F1A3 /* CoreFoundation.framework */,
+				FC36283E0E93463C0054F1A3 /* IOKit.framework */,
+				7215DE4B0EFAF2EC00ABD81E /* libauditd.dylib */,
+				FC36292C0E934AA40054F1A3 /* libbsm.dylib */,
+				FCD713730E95DE49001B0111 /* libedit.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC59A03D0E8C87FD00D41150 = {
+			isa = PBXGroup;
+			children = (
+				FC59A0AE0E8C8A0E00D41150 /* service.c */,
+				2233E845195FA5DF00BF8CB3 /* service.1 */,
+				226B866B195FB05E00D59C1D /* include */,
+				FC36280C0E9345F60054F1A3 /* Frameworks */,
+				FC59A0550E8C884700D41150 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC59A0550E8C884700D41150 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC59A06D0E8C888A00D41150 /* service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC59A06C0E8C888A00D41150 /* service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC59A0890E8C890A00D41150 /* Build configuration list for PBXNativeTarget "service" */;
+			buildPhases = (
+				FC59A06A0E8C888A00D41150 /* Sources */,
+				FC59A06B0E8C888A00D41150 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = service;
+			productName = launchctl;
+			productReference = FC59A06D0E8C888A00D41150 /* service */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC59A03F0E8C87FD00D41150 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = FC59A0420E8C87FD00D41150 /* Build configuration list for PBXProject "service" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = FC59A03D0E8C87FD00D41150;
+			productRefGroup = FC59A0550E8C884700D41150 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC59A06C0E8C888A00D41150 /* service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC59A06A0E8C888A00D41150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC59A0AF0E8C8A0E00D41150 /* service.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC59A0410E8C87FD00D41150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/include",
+				);
+			};
+			name = Release;
+		};
+		FC59A0700E8C888A00D41150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				PRODUCT_NAME = service;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC59A0420E8C87FD00D41150 /* Build configuration list for PBXProject "service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC59A0410E8C87FD00D41150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC59A0890E8C890A00D41150 /* Build configuration list for PBXNativeTarget "service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC59A0700E8C888A00D41150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC59A03F0E8C87FD00D41150 /* Project object */;
+}
