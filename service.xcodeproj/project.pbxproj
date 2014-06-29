@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22316B0619609C7D00CB8F20 /* commands.c in Sources */ = {isa = PBXBuildFile; fileRef = 22316B0519609C7D00CB8F20 /* commands.c */; };
 		22512441195FBE580091F5E8 /* libbsm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36292C0E934AA40054F1A3 /* libbsm.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		72AFE8090EFAF3D9004BDA46 /* libauditd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7215DE4B0EFAF2EC00ABD81E /* libauditd.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		FC3628080E9345E10054F1A3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3628070E9345E10054F1A3 /* CoreFoundation.framework */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22316B0519609C7D00CB8F20 /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commands.c; sourceTree = "<group>"; };
 		2233E845195FA5DF00BF8CB3 /* service.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = service.1; sourceTree = "<group>"; };
 		226B866C195FB05E00D59C1D /* _simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
 		226B8670195FB05E00D59C1D /* CrashReporterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
@@ -32,6 +34,9 @@
 		226B8686195FBB3200D59C1D /* bootstrap_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bootstrap_priv.h; sourceTree = "<group>"; };
 		226B8687195FBB6000D59C1D /* si_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = si_data.h; sourceTree = "<group>"; };
 		226B8688195FBB6000D59C1D /* si_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = si_module.h; sourceTree = "<group>"; };
+		22D708FE195FDA0200C6A38C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22D708FF195FDA0200C6A38C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		22DE8D7E19609B5C00DC5BEE /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
 		7215DE4B0EFAF2EC00ABD81E /* libauditd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauditd.dylib; path = /usr/lib/libauditd.dylib; sourceTree = "<absolute>"; };
 		FC3628070E9345E10054F1A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		FC36283E0E93463C0054F1A3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
@@ -110,7 +115,11 @@
 		FC59A03D0E8C87FD00D41150 = {
 			isa = PBXGroup;
 			children = (
+				22316B0519609C7D00CB8F20 /* commands.c */,
+				22DE8D7E19609B5C00DC5BEE /* service.h */,
 				FC59A0AE0E8C8A0E00D41150 /* service.c */,
+				22D708FE195FDA0200C6A38C /* LICENSE */,
+				22D708FF195FDA0200C6A38C /* README.md */,
 				2233E845195FA5DF00BF8CB3 /* service.1 */,
 				226B866B195FB05E00D59C1D /* include */,
 				FC36280C0E9345F60054F1A3 /* Frameworks */,
@@ -179,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC59A0AF0E8C8A0E00D41150 /* service.c in Sources */,
+				22316B0619609C7D00CB8F20 /* commands.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
